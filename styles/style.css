@@ -1,0 +1,366 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+/*General*/
+:root {
+    --primary-color: #FCA311;
+    --second-color: #14213D;
+    --thrid-color: #E5E5E5;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family:  "Poppins",sans-serif;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none; 
+}
+
+a {
+    text-decoration: none;
+    color: var(--second-color);
+}
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0 10px;
+}
+
+img {
+    width: 100%;
+}
+
+
+/*Reusable*/
+
+/*Container*/
+.container {
+    max-width: 1440px;
+    margin: auto;
+    padding: 10px;
+    overflow: auto;
+}
+
+/*Trending Item*/
+.trending-item {
+    width: 400px;
+    background-color: var(--thrid-color);
+    border-radius: 2px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+}
+
+.trending-item img {
+    max-width: 120px;
+    max-height: 120px;
+}
+
+.trending .trending-item {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.trending .trending-item-info {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.trending .trending-item-info .item-title {
+    color: var(--second-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/*Others*/
+.flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/*Navbar*/
+.navbar {
+    background: var(--primary-color);
+    color: var(--second-color);
+    padding: 10px 0;
+    border-bottom: 2px solid var(--second-color);
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.navbar .container ul {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.navbar a {
+    padding: 0 10px;
+    margin: 0 5px;
+}
+
+/*Main Slider*/
+.main-slider {
+    background: var(--primary-color);
+    padding: 20px 10px;
+    border-bottom: 2px solid var(--second-color);
+}
+
+.main-slider .slider-row-1 {
+    font-size: 24px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.main-slider .slider-row-2 {
+    justify-content: center;
+}
+
+.main-slider .slider-row-3 {
+    justify-content: center;
+}
+
+.main-slider .slider-row-3 section{
+    padding: 10px 0px;
+    margin: 10px 20px;
+}
+.main-slider .slider-row-2 p, .main-slider .slider-row-3 p {
+    max-width: 720px;
+}
+
+.main-slider .container img {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+/*Trending*/
+.trending {
+    background: white;
+    height: auto;
+    padding: 20px 10px;
+    border-bottom: 2px solid var(--second-color);
+}
+
+.trending .title {
+   font-size: 20px;
+}
+
+.trending .trending-items {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/*What I would like learn*/
+.technologies {
+    background-color: var(--second-color);
+    color: white;
+    height: auto;
+    padding: 20px 10px;
+    border-bottom: 2px solid white;
+}
+
+.technologies .title {
+    font-size: 20px;
+    padding: 20px 10px;
+ }
+
+.technology-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 100px);
+    grid-template-rows: repeat(5, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+.tech-item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-item .initials {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.tech-item .tech-name {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.tech-item.front-end {
+    background-color: transparent;
+    border: 5px solid #53c8e2;
+    color: #53c8e2;
+}
+
+.tech-item.back-end {
+    background-color: transparent;
+    border: 5px solid #86CA4D;
+    color: #86CA4D;
+}
+
+.tech-item.infra {
+    background-color: transparent;
+    border: 5px solid #FF7C6E;
+    color: #FF7C6E;
+}
+
+.tech-item.others {
+    background-color: transparent;
+    border: 5px solid #ff9d00;
+    color: #ff9d00;
+}
+
+.empty-space-1 {
+        background-color: transparent;
+        grid-column: 5 / span 5;
+        grid-row: 1;
+}
+
+.empty-space-2 {
+    background-color: transparent;
+    grid-column: 1 / span 1;
+    grid-row: 2;
+}
+
+.empty-space-3 {
+    background-color: transparent;
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+.empty-space-4 {
+    background-color: transparent;
+    grid-column: 1 / span 3;
+    grid-row: 4;
+}
+
+.empty-space-5 {
+    background-color: transparent;
+    grid-column: 7 / span 3;
+    grid-row: 2;
+}
+
+.empty-space-6 {
+    background-color: transparent;
+    grid-column: 8 / span 2;
+    grid-row: 3;
+}
+
+.empty-space-7 {
+    background-color: transparent;
+    grid-column: 1 / span 4;
+    grid-row: 5;
+}
+
+/*Footer*/
+.footer {
+    background-color: var(--second-color);
+    color: white;
+    height: auto;
+    padding: 20px 10px;
+    border-bottom: 2px solid white;
+}
+
+.footer .container {
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .container ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-items ul li a{
+    font-size: 20px;
+    font-weight: normal;
+    color: var(--thrid-color);
+    padding: 0 10px;
+    margin: 0 5px;
+}
+
+.footer-logos img {
+    width: 50px;
+    height: 50px;
+    padding: 0 10px;
+    margin: 0 5px;
+}
+
+.footer .footer-author {
+    flex-direction: column;
+}
+
+/*Tablets*/
+@media (max-width: 1024px){
+    .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        padding: 5px 5px;
+        margin: 5px 5px;
+    }
+
+    .main-slider {
+        text-align: center;
+    }
+
+    .technology-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 100px);
+        grid-template-rows: repeat(5, 100px);
+        grid-gap: 10px;
+        justify-content: center;
+        align-content: center;
+    }
+    .space {
+        background-color: transparent;
+        grid-column: 1 / span 4;
+        grid-row: 1;
+    }
+
+    .footer-logos {
+        flex-direction: row;
+    }
+}
+
+/*Mobile*/
+@media (max-width: 670px){
+    .technology-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(8, 100px);
+        grid-gap: 10px;
+        justify-content: center;
+        align-content: center;
+    }
+    .space {
+        background-color: transparent;
+        grid-column: 1 / span 1;
+        grid-row: 1;
+    }
+}
+
