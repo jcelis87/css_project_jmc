@@ -8,8 +8,8 @@ I got the idea of the periodic table from: https://codepen.io/oliviale/pen/ZmvPP
 Resubmission
 1. Removed index_old.
 2. index.html and my_post.html linked
-3. Added html tags <b>, <em>, <u> and <blockquote>
+3. Added html tags `<b>, <em>, <u> and <blockquote>`
 4. Included image caption and buttons
 5. Added author card with: name, title, company, short bio and avatar.
 6. Resposive layout checked
-7. <div> and <section> with class or id
+7. `<div>` and `<section>` with class or id
